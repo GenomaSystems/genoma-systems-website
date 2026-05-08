@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Consultation | Genoma Systems</title>
+    <meta name="description"
+        content="Request a consultation with Genoma Systems for custom genomics software development tailored to clinical and laboratory workflows.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-logo">
+                <span class="logo-text"><a href="./index.html">Genoma Systems</a></span>
+            </div>
+            <div class="header-explainer">
+                A specialized genomics<br class="mobile-break"> software company
+            </div>
+        </div>
+    </header>
+
+    <!-- Consultation Section -->
+    <section class="consultation-section">
+        <div class="container consultation-container">
+
+            <div class="consultation-header">
+                <h1>Request a Consultation</h1>
+                <p>We’ll get back to you to discuss your workflows, challenges, and requirements.</p>
+            </div>
+
+            <div id="formSuccessMessage" class="form-success">
+                <strong>Thank you!</strong> Your request has been successfully submitted. We will be in touch with you
+                shortly.
+            </div>
+
+            <form id="consultationForm" class="consultation-form">
+                <div class="form-group">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="organization" class="form-label">Organization</label>
+                    <input type="text" id="organization" name="organization" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="workEmail" class="form-label">Work Email</label>
+                    <input type="email" id="workEmail" name="workEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message (optional)</label>
+                    <textarea id="message" name="message" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">Request a Consultation</button>
+                <div class="privacy-line">All information shared will be kept confidential.</div>
+            </form>
+
+            <!-- <div class="direct-contact">
+                <h3>Prefer direct communication?</h3>
+                <p class="contact-name">Shivang Patel</p>
+                <p class="contact-role">Founder, Genoma Systems</p>
+                <p><a href="mailto:shivang@genomasystems.com">shivang@genomasystems.com</a></p>
+                <p><a href="tel:+919879855999">+91 98798 55999</a></p>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-text">Genoma Systems</span>
+                    </div>
+                    <p class="footer-tagline">Genomics Software Specialists</p>
+                    <p class="footer-mission">Making genomic data useful in clinical practice.</p>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-contact">
+                        <p class="contact-name">Shivang Patel</p>
+                        <p class="contact-role">Founder, Genoma Systems</p>
+                        <p><a href="mailto:shivang@genomasystems.com">shivang@genomasystems.com</a></p>
+                        <p><a href="tel:+919879855999">+91 98798 55999</a></p>
+                        <p><a href="https://GenomaSystems.com">GenomaSystems.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Genoma Systems (OPC) Private Limited</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
