@@ -31,7 +31,8 @@ body {
     background-color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 76px; /* Offset for fixed header */
+    padding-top: 76px;
+    /* Offset for fixed header */
     /* No horizontal scrolling */
 }
 
@@ -64,7 +65,7 @@ h6 {
 }
 
 h2.section-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -98,6 +99,7 @@ h2.section-title {
     justify-content: center;
     padding: 0.875rem 2rem;
     font-weight: 500;
+    font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
     border-radius: 0;
@@ -117,9 +119,9 @@ h2.section-title {
 }
 
 .btn-primary {
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    background-color: transparent;
+    color: var(--white);
+    /* border: 2px solid var(--primary-color); */
+    background-color: var(--primary-color);
 }
 
 .btn-primary:hover {
@@ -190,7 +192,7 @@ h2.section-title {
 
 .hero-subtitle {
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2.5rem;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -248,7 +250,7 @@ h2.section-title {
 }
 
 .section-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -271,10 +273,12 @@ h2.section-title {
 
     .hero-subtitle {
         font-size: 1.1rem !important;
+        font-weight: 400;
     }
 
     .hero {
         padding: 4rem 0;
+        padding-top: 5rem;
     }
 
     .section-heading {
@@ -625,7 +629,7 @@ h2.section-title {
 }
 
 .cta-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -659,13 +663,35 @@ h2.section-title {
 }
 
 .footer-tagline {
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: 0.5rem;
+}
+
+.image-logo-header {
+    width: 75%;
+}
+
+.image-logo-footer {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .image-logo-header {
+        width: 90%;
+    }
+
+    .image-logo-footer {
+        width: 50%;
+    }
+
+    .header-logo {
+        width: 50%;
+    }
 }
 
 .footer-mission {
     font-size: 0.95rem;
-    color: #4a5568;
+    color: var(--text-color);
 }
 
 .footer-heading {
@@ -713,6 +739,10 @@ h2.section-title {
         text-align: center;
     }
 
+    .footer-logo img {
+        margin: 0 auto;
+    }
+
     .footer-links {
         align-items: center;
     }
@@ -735,7 +765,7 @@ h2.section-title {
 }
 
 .consultation-header h1 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
@@ -764,7 +794,8 @@ h2.section-title {
     width: 100%;
     padding: 0.875rem 1rem;
     border: 1px solid var(--border-color);
-    border-radius: 0; /* Square corners */
+    border-radius: 0;
+    /* Square corners */
     font-family: var(--font-family);
     font-size: 1rem;
     color: var(--text-color);
@@ -830,13 +861,13 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     .consultation-header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    
+
     .consultation-header p {
         font-size: 1rem;
     }
-    
+
     .consultation-section {
         padding: 4rem 0;
     }
@@ -853,4 +884,13 @@ p.contact-role {
     font-size: 0.875rem;
     color: #718096;
     margin-bottom: 1rem;
+}
+
+@media (max-width:768px) {
+    .logo-text {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
 }
