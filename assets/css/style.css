@@ -31,7 +31,6 @@ body {
     background-color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 76px;
     /* Offset for fixed header */
     /* No horizontal scrolling */
 }
@@ -134,16 +133,11 @@ h2.section-title {
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--border-color);
     background-color: var(--white);
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
-}
-
-.header.header-hidden {
-    transform: translateY(-100%);
 }
 
 .header-container {
@@ -255,6 +249,11 @@ h2.section-title {
 }
 
 @media (max-width: 768px) {
+
+    .header-explainer {
+        font-size: 0.775rem;
+    }
+
     .mobile-break {
         display: block;
     }
@@ -672,6 +671,7 @@ h2.section-title {
 }
 
 .image-logo-footer {
+    content: url("../images/Logo-Genoma-Systems.svg");
     width: 40%;
 }
 
@@ -681,11 +681,12 @@ h2.section-title {
     }
 
     .image-logo-footer {
+        content: url("../images/Final-Logo-Genoma-Systems-footer.svg");
         width: 50%;
     }
 
     .header-logo {
-        width: 50%;
+        width: 60%;
     }
 }
 
