@@ -5,6 +5,7 @@
     --bg-light: #f8f9fa;
     --white: #ffffff;
     --accent-blue: #88c0ff;
+    --muted-color: #718096;
     /* Light blue accent for "Useful" */
     --border-color: #e2e8f0;
     --font-family: 'Inter', sans-serif;
@@ -728,7 +729,7 @@ h2.section-title {
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
     font-size: 0.875rem;
-    color: #718096;
+    color: var(--muted-color);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -823,7 +824,7 @@ textarea.form-control {
 .privacy-line {
     text-align: center;
     font-size: 0.875rem;
-    color: #718096;
+    color: var(--muted-color);
     margin-top: 1rem;
 }
 
@@ -883,7 +884,7 @@ p.contact-name {
 
 p.contact-role {
     font-size: 0.875rem;
-    color: #718096;
+    color: var(--muted-color);
     margin-bottom: 1rem;
 }
 
