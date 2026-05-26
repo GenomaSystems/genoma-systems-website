@@ -1,5 +1,6 @@
 /* Base & Reset */
 :root {
+    color-scheme: only light;
     --primary-color: #1b3781;
     --text-color: #141519;
     --bg-light: #f8f9fa;
